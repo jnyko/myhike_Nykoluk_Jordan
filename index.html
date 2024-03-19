@@ -44,7 +44,7 @@
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body>
@@ -53,11 +53,27 @@
     <!------------------------------>
 
     <!-- our own navbar goes here -->
-    <nav id="navbarPlaceholder"></nav>
-
+    <nav id="navbarPlaceholder" style="background-color: slateblue"></nav>
+    <div class="container text-center py-4">
+      <div class="rounded-circle overflow-hidden"></div>
+      <h1>Welcome to Jordan's Hiking App</h1>
+      <a href="login.html" class="btn btn-warning" role="button">Log in</a>
+    </div>
     <!-- the body of your page goes here -->
     <!-- stuff -->
-
+    <img
+      class="responsive"
+      src="./images/elmo.jpg"
+      alt=""
+      style="
+        width: 500px;
+        border-radius: 25%;
+        align-items: center;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10%;
+      "
+    />
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
 
@@ -66,6 +82,9 @@
     <!---------------------------------------------->
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
-    <!-- <script src="./scripts/script.js"></script> -->
+    <script src="./scripts/script.js"></script>
+    <script>
+      logout(); //make sure user is logged out
+    </script>
   </body>
 </html>
